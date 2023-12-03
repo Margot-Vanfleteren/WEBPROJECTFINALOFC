@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- importing last version of vue.js via CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <h1>LISTEN SOME MUSIC   </h2>
+    <div id="app">
+        <button id="next" @click="nextOne">next</button>
+        <button id="previus" @click="prevOne">previus</button>
+        <!-- this part is used by view js to display cards -->
+        <div id="displayArea">
+            <img :src="currentObject.image" alt="">
+            <h3>{{ currentObject.Title }}</h1>
+            <p>{{ currentObject.Desc }}</p>
+            <script src="js/script.js"></script>
+        </div> 
+    </div>
+    </main>
+    <!-- Group : Sofiane Kheraf and Margot Vanfleteren -->
+</body>
+</html>
